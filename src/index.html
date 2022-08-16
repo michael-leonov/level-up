@@ -7,6 +7,194 @@
         <title>LevelUp</title>
     </head>
     <body>
+        <section class="promo">
+            <div class="container">
+                <div class="intro">
+                    <p class="product__name">LevelUp</p>
+
+                    <div class="product__description">
+                        <img
+                            src="../static/prod.png"
+                            alt="Product"
+                            class="product__description-img"
+                        />
+                        <ul class="product__description-features">
+                            Lorem, ipsum dolor.
+                            <li class="product__feature">
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li class="product__feature">
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li class="product__feature">
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <a href="#order" class="btn-order">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="composition">
+            <div class="container">
+                <div class="product">
+                    <div class="product__ingredients">
+                        <div class="product__ingredients-ingredient">
+                            <img
+                                src="../static/prod.png"
+                                class="ingredient__img"
+                            />
+                            <p>Lorem.</p>
+                        </div>
+                        <div class="product__ingredients-ingredient">
+                            <img
+                                src="../static/prod.png"
+                                class="ingredient__img"
+                            />
+                            <p>Lorem.</p>
+                        </div>
+                        <div class="product__ingredients-ingredient">
+                            <img
+                                src="../static/prod.png"
+                                class="ingredient__img"
+                            />
+                            <p>Lorem.</p>
+                        </div>
+                    </div>
+                    <div class="product__main">
+                        <img src="../static/prod.png" alt="" />
+                        <a href="#order" class="btn-order">Заказать</a>
+                    </div>
+                    <div class="product__ingredients">
+                        <div class="product__ingredients-ingredient">
+                            <img
+                                src="../static/prod.png"
+                                class="ingredient__img"
+                            />
+                            <p>Lorem.</p>
+                        </div>
+                        <div class="product__ingredients-ingredient">
+                            <img
+                                src="../static/prod.png"
+                                class="ingredient__img"
+                            />
+                            <p>Lorem.</p>
+                        </div>
+                        <div class="product__ingredients-ingredient">
+                            <img
+                                src="../static/prod.png"
+                                class="ingredient__img"
+                            />
+                            <p>Lorem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="" alt="" />
+                            <p>Lorem.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="" alt="" />
+                            <p>Lorem.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="" alt="" />
+                            <p>Lorem.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="" alt="" />
+                            <p>Lorem.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-promo">
+            <div class="container">
+                <div class="about">
+                    <div class="product__description">
+                        <img
+                            src="../static/doctor.png"
+                            alt=""
+                            class="product__description-img"
+                        />
+                        <p class="product__description-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Consectetur nulla dolorem accusantium, nemo
+                            qui saepe, nesciunt accusamus aliquid facere
+                            dignissimos aperiam officiis itaque illum repellat
+                            ipsum adipisci quisquam obcaecati? Repellat.
+                        </p>
+                        <a href="#order" class="btn-order">Заказать</a>
+                    </div>
+                    <ul class="product__description-features">
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Blanditiis, natus tenetur?</li>
+                        <li>Inventore, repellendus odit.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="form-order">
+            <div class="container">
+                <div class="form-wrapper">
+                    <p class="product__name">LevelUp</p>
+                    <p class="timer"></p>
+                    <div class="form-main">
+                        <div class="price-block">
+                            <!-- <img src="../static/prod.png" alt="" /> -->
+                            <p class="price-old">1000</p>
+                            <p class="price-new">2000</p>
+                        </div>
+                        <form class="form">
+                            <div class="input-wrapper">
+                                <input
+                                    class="form__input"
+                                    id="form-name"
+                                    type="text"
+                                    required
+                                />
+                                <span class="prompt">Alice</span>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <input
+                                    class="form__input"
+                                    id="form-tel"
+                                    type="tel"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                    required
+                                />
+                                <span class="prompt">89994559898</span>
+                            </div>
+
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <script src="./index.js"></script>
     </body>
 </html>
