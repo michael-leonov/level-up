@@ -40,6 +40,14 @@
             width: 600px;
         }
     }
+
+    .form-order {
+        .form-wrapper {
+            .timer {
+                font-size: 32px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -131,6 +139,10 @@
 
     .form-order {
         .form-wrapper {
+            .timer {
+                font-size: 20px;
+            }
+
             .form-main {
                 flex-direction: column;
 

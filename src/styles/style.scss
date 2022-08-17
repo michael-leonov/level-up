@@ -164,46 +164,53 @@ section {
 }
 
 .form-order {
-    .form-main {
-        display: flex;
-        justify-content: space-evenly;
-
-        .price-block {
-            .price-old {
-                font-size: 24px;
-                text-decoration: line-through;
-                text-align: center;
-            }
-
-            .price-new {
-                font-size: 36px;
-                text-align: center;
-                animation-duration: 3s;
-                animation-name: slidein;
-            }
+    .form-wrapper {
+        .timer {
+            text-align: center;
+            font-size: 56px;
         }
 
-        .form {
+        .form-main {
             display: flex;
-            flex-direction: column;
-            row-gap: 20px;
-            align-self: center;
+            justify-content: space-evenly;
 
-            .input-wrapper {
-                position: relative;
+            .price-block {
+                .price-old {
+                    font-size: 24px;
+                    text-decoration: line-through;
+                    text-align: center;
+                }
 
-                span {
-                    position: absolute;
-                    top: 2px;
-                    right: 4px;
-                    display: none;
-                    font-size: 10px;
+                .price-new {
+                    font-size: 36px;
+                    text-align: center;
+                    animation-duration: 3s;
+                    animation-name: slidein;
                 }
             }
 
-            &__input {
-                &:focus + span {
-                    display: block;
+            .form {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                align-self: center;
+
+                .input-wrapper {
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        top: 2px;
+                        right: 4px;
+                        display: none;
+                        font-size: 10px;
+                    }
+                }
+
+                &__input {
+                    &:focus + span {
+                        display: block;
+                    }
                 }
             }
         }

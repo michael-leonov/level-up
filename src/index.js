@@ -28,3 +28,24 @@ const swiper = new Swiper('.swiper', {
         },
     },
 });
+
+let timeScreen = document.querySelector('.timer');
+let time = 1800;
+let tCount;
+
+function countDown() {
+    let minutes =
+        Math.floor(time / 60) < 10
+            ? '0' + Math.floor(time / 60)
+            : Math.floor(time / 60);
+    let seconds = time % 60 < 10 ? '0' + (time % 60) : time % 60;
+    timeScreen.innerHTML = `${minutes}:${seconds}`;
+    if (time <= 0) {
+        clearInterval(tCount);
+    }
+    time--;
+}
+
+(function startGame() {
+    tCount = setInterval(countDown, 1000);
+})();
