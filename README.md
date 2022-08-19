@@ -3,5 +3,6 @@
 test for teamlead
 
 ## Install & Usage
+Clone repo and `npm i && npm run start`
 
-`npm i && npm run start`
+
